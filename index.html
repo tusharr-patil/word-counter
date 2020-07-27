@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Word Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Word Count Guru</label>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">DMCA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Section Of The Page -->
+    <section>
+
+        <div class="box">
+            <div class="details">
+                <p id="showwords1">Words: 0</p>
+                <p id="showchar1">Characters: 0</p>
+                <div class="toolBar">
+                    <button id="clearBtn" onclick="clearFunc()">Clear</button>
+                    <div class="dropdown">
+                        <button onclick="">Case &#9660;</button>
+                        <div class="dropdown-content">
+                            <a onclick="upper()">UPPERCASE</a>
+                            <a onclick="lower()">lowercase</a>
+                            <a onclick="titleCase()">Title Case</a>
+                            <a onclick="noneCase()">None</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <textarea name="" id="box1" cols="100" rows="15" placeholder="Type/Paste Text..." oninput="count()"
+                EnableViewState=true></textarea>
+            <div id="lowerBox">
+                <h1>More Details</h1>
+                <p id="showwords2">Words: 0</p>
+                <p id="showchar2">Characters: 0</p>
+                <p id="showchar3">Without Whitespaces: 0</p>
+                <p id="showpara">Paragraph: 0</p>
+                <p id="showsent">Sentences: 0</p>
+                <p id="showTime">Reading Time: ~ 0 min</p>
+            </div>
+            <div class="details" id="article">
+
+                <h2>About Word Count Guru</h2>
+                <p>Word Count Guru is the online word counter tool which helps you to count the words, character/letter
+                    (with
+                    or without spaces), paragraph. This word counter tool is designed for the people who wants to know
+                    the
+                    word
+                    count, char count / letter count, paragraph count, etc.
+
+                    We have made this word counter tool so easy that even the person who doesn't know about using
+                    Internet
+                    can
+                    easily figure out that how to use word count guru. The simplicity of this word count guru make it
+                    unique
+                    from everyone else in the market.</p>
+
+                <h2>How is Word Count Guru used?</h2>
+                <p>To use Word Count Guru need to copy the text of which you need to count the words, letters, or
+                    paragraphs
+                    and you need to paste it in the upper text box. You don't have to press any button of count words as
+                    our
+                    Word Count Guru is automated and it will automatically show you the words and the characters which
+                    you
+                    text
+                    consists of. By pasting the text in the box you can count the words of pages, books, website. All
+                    you
+                    need
+                    to do is to paste the text in the box. And don't worry about the limit, the tool works perfect if
+                    you
+                    have
+                    high frequency of words to count.</p>
+
+                <h2>Who Can Use Word Count Guru?</h2>
+                <p>Word Count Guru is for students, teachers, bloggers, content writers, or someone who wants to count
+                    the
+                    words of the certain text, pages, book etc. There is No Limit on the text. You can add text without
+                    a
+                    single
+                    worry. We have tested our word count guru on bigger words and it works smooth.</p>
+
+                <h2>Features Of Word Count Guru</h2>
+                <p>Word Count Guru is not only for calculating the word frequency but it also counts the characters,
+                    paragraphs
+                    and the reading time. You can get all the new features in More Details Section. Also if you need to
+                    convert
+                    you text to UPPERCASE, lowercase, or Title Case, you can easily convert using the case button above
+                    the
+                    text
+                    box. Not only you can calculate the characters on word count guru but you can also calculate
+                    characters
+                    without whitespaces. Yes, you can calculate the characters with spaces or without spaces. Most of
+                    the
+                    tools
+                    out their will calculate the characters with spaces, so if you have lots of extra spaces in you text
+                    you
+                    can
+                    easily get mislead. To access the Characters without spaces/whitespaces, you can check More Details
+                    Section which is below the text box. In the future we are going to add lots of new feature to Word
+                    Count
+                    Guru such as Word Count On Pages (in this you just need to attach your pdf file and you will get the
+                    word
+                    count) and word count checker for websites (in this you need to paste the website url and you can
+                    get
+                    word
+                    count) and save button. So stay tuned for new version and don't worry it will be free to count words
+                    on
+                    Word
+                    Count Guru, also you will get access to all the new features for free.</p>
+
+                <p>*NOTE: BookMark Our Page As It Will Be Easy For You To Reach Us!</p>
+
+                <h2>Which Devices this tool support?</h2>
+                <p>Well, Word Count Guru is optimized fast & easy to use tool. And it supports on each and every devices
+                    whether it is a keypad phone, smart phone, laptop or PC or some other big screens. Also, Word Count
+                    Guru works in any web browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera. So you can
+                    use Word Count Guru anytime and anywhere all you need is internet access.</p>
+
+                <h2>Is Word Count Guru Free At All?</h2>
+                <p>I am proud to say that YES, it is free of cost. You can count words, characters/letters, paragraphs,
+                    reading
+                    time etc for FREE. Then you may be wondering that how Word Count Guru earns money? For you guys we
+                    are
+                    making our tool free, and we are going to earn through ad networks (by showing ads to you guys).
+                    Also in
+                    the
+                    future we are going to add lots of new features to Word Count Guru and all those features are going
+                    to
+                    free
+                    of cost.</p>
+
+                <h2>We Respect User's Privacy</h2>
+                <p> Count Guru will never use the data of our users for our own purposes. We have designed our Word
+                    Count Guru Tool in such a way that it cannot fetch the data of the users who are using it. So even
+                    if your text is some government secret we cannot fetch your data because our tool doesn't allow
+                    anyone to fetch the data of the user because we respect our user's privacy.</p>
+
+                <p>Disclaimer: We are always working on our tool to make it as accurate and fast as possible but we
+                    cannot
+                    guarantee that it will always work that way all the time.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="bo-wrap clr3">
+            <div class="bo-footer">
+                <div class="bo-footer-smap">
+                    <a href="#">DMCA</a> |
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Disclaimer</a> |
+                    <a href="#">Contact Us </a>
+                </div>
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="bo-wrap clr4">
+            <div class="bo-footer">
+                <div class="bo-footer-copyright">&copy;2020 WordCountGuru.com All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function readTime() {
+            const wordspermin = 250;
+            let length = document.getElementById('box1').value.length;
+            let readingTime = Math.ceil(length / wordspermin);
+            document.getElementById('showTime').innerText = "Reading Time: " + " ~ " + readingTime + " min";
+        }
+        function upper() {
+            document.getElementById("box1").style.textTransform = "uppercase";
+
+        }
+        function lower() {
+            document.getElementById("box1").style.textTransform = "lowercase";
+
+        }
+        function titleCase() {
+            document.getElementById("box1").style.textTransform = "capitalize";
+
+        }
+        function noneCase() {
+            document.getElementById("box1").style.textTransform = "none";
+
+        }
+
+        function countSentences() {
+            var val = document.getElementById("box1").value;
+            var sentences = val.split(/[\.!?]+/); // split on punctuation
+            document.getElementById('showsent').innerText = "Sentences: " + (sentences.length - 1);
+        }
+        function countPara() {
+            var my_data = document.getElementById("box1").value;
+            my_data = my_data.split("\n\n");
+            var g = my_data.length;
+            var i = 0;
+            var strip_whitespace = /\s+/gi;
+            while (g >= 0) {
+                g--;
+                var tmp = my_data[g];
+                tmp = tmp ? tmp.replace(strip_whitespace, "") : tmp;
+                if (tmp && tmp.length > 1) {
+                    i++;
+                }
+            }
+            document.getElementById('showpara').innerText = "Paragraphs: " + i;
+        }
+        function clearFunc() {
+            document.getElementById('box1').value = "";
+            count();
+        }
+        function count() {
+            let noc = document.getElementById('box1').value;
+            if (noc.length == 0) {
+                document.getElementById('showwords1').innerText = "Words: " + 0;
+                document.getElementById('showchar1').innerText = "Characters:  " + 0;
+                document.getElementById('showwords2').innerText = "Words: " + 0;
+                document.getElementById('showchar2').innerText = "Characters:  " + 0;
+                document.getElementById('showchar3').innerText = "Without Whitespaces:  " + 0;
+            }
+            else {
+                let trimChar = noc.replace(/ /g, "");
+                let trimLength = trimChar.length;
+                noc = document.getElementById('box1').value.length;
+                let now = document.getElementById('box1').value;
+                now = now.match(/\w+/g);
+                now = now.length;
+                document.getElementById('showwords1').innerText = "Words: " + now;
+                document.getElementById('showchar1').innerText = "Characters:  " + noc;
+                document.getElementById('showwords2').innerText = "Words: " + now;
+                document.getElementById('showchar2').innerText = "Characters:  " + noc;
+                document.getElementById('showchar3').innerText = "Without Whitespaces:  " + trimLength;
+            }
+            countPara();
+            countSentences();
+            readTime();
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
